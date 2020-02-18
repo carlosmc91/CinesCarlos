@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondonegro"
+    android:orientation="vertical"
+    tools:context=".AreaPersonal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="731dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iconousuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/user" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etnombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/etnombre"
+                android:inputType="textPersonName"
+                android:textColor="#00838F"
+                android:textColorHighlight="#00838F"
+                android:textColorHint="#00838F"
+                android:textColorLink="#00838F" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etapellido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/etapellido"
+                android:inputType="textPersonName"
+                android:textColor="#00838F"
+                android:textColorHighlight="#00838F"
+                android:textColorHint="#00838F"
+                android:textColorLink="#00838F" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iconotarjeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/tarjeta" />
+
+        <EditText
+            android:id="@+id/CreditCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/creditCard"
+            android:inputType="number|text"
+            android:textColor="#00838F"
+            android:textColorHighlight="#00838F"
+            android:textColorHint="#00838F"
+            android:textColorLink="#00838F" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            app:srcCompat="@drawable/phone" />
+
+        <EditText
+            android:id="@+id/etphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="@string/ettelofono"
+            android:inputType="phone"
+            android:maxLength="9"
+            android:textColor="#00838F"
+            android:textColorHighlight="#00838F"
+            android:textColorHint="#00838F"
+            android:textColorLink="#00838F" />
+
+        <TextView
+            android:id="@+id/etcorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#00838F" />
+
+        <Button
+            android:id="@+id/btnactualizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/botonhistorial"
+            android:onClick="ActualizarCliente"
+            android:text="@string/btnactualizar"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+    </LinearLayout>
+
+</LinearLayout>

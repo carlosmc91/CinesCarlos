@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PopupCines">
+
+    <TextView
+        android:id="@+id/CinesDisponibles"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#00838F"
+        android:textSize="18sp"
+        tools:text="@string/CinesDisponibles" />
+
+    <Spinner
+        android:id="@+id/spinnercines"
+        android:layout_width="336dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/botonredondo"
+        android:backgroundTint="#AA416D70"
+        android:focusable="auto"
+        android:foregroundTint="#00838F"
+        android:gravity="center"
+        android:spinnerMode="dialog" />
+</LinearLayout>

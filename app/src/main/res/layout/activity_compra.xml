@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondonegro"
+    android:orientation="vertical"
+    tools:context=".Compra">
+
+    <TextView
+        android:id="@+id/Titulopelicula"
+        android:layout_width="match_parent"
+        android:layout_height="111dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#24CADA"
+        android:textSize="36sp" />
+
+    <Spinner
+        android:id="@+id/spinnercines"
+        android:layout_width="354dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/botonredondo"
+        android:backgroundTint="#AA416D70"
+        android:focusable="auto"
+        android:foregroundTint="#00838F"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:spinnerMode="dialog" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Fecha"
+            android:layout_width="248dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/botonredondo"
+            android:backgroundTint="#AA416D70"
+            android:focusable="auto"
+            android:gravity="center" />
+
+        <ImageButton
+            android:id="@+id/imgfecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="38dp"
+            android:background="@android:color/transparent"
+            android:onClick="obtenerFecha"
+            app:srcCompat="@drawable/calendario" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Seleccion"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:text="@string/Seleccion"
+        android:textColor="#00838F"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="375dp"
+        android:layout_height="73dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Hora1"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/botonredondo"
+            android:backgroundTint="#AA416D70"
+            android:focusable="auto"
+            android:gravity="center"
+            android:onClick="Hora1"
+            android:text="@string/Hora1" />
+
+        <Button
+            android:id="@+id/Hora2"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/botonredondo"
+            android:backgroundTint="#AA416D70"
+            android:focusable="auto"
+            android:gravity="center"
+            android:onClick="Hora2"
+            android:text="@string/Hora2" />
+
+        <Button
+            android:id="@+id/Hora3"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/botonredondo"
+            android:backgroundTint="#AA416D70"
+            android:focusable="auto"
+            android:gravity="center"
+            android:onClick="Hora3"
+            android:text="@string/Hora3" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/seleccionbu"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:gravity="center"
+        android:text="@string/Seleccionbu"
+        android:textColor="#00838F"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnselecbu"
+            android:layout_width="329dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/botonredondo"
+            android:backgroundTint="#AA41ADB8"
+            android:focusable="auto"
+            android:gravity="center|center_horizontal"
+            android:onClick="Obtenervariables"
+            android:text="@string/Seleccionbu" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher_foreground" />
+
+</LinearLayout>

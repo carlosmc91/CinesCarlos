@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondonegro"
+    android:orientation="vertical"
+    android:padding="20dip">
+
+    <TextView
+        android:id="@+id/txtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/txtLogin"
+        android:textColor="#37D1DF"
+        android:textSize="70dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:hint="@string/txt_email"
+        android:inputType="textEmailAddress"
+        android:textColor="#00838F"
+        android:textColorHighlight="#00838F"
+        android:textColorHint="#00838F"
+        android:textColorLink="#00838F" />
+
+    <EditText
+        android:id="@+id/txtPass"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dip"
+        android:layout_marginBottom="30dip"
+        android:gravity="center_horizontal"
+        android:hint="@string/txt_password"
+        android:inputType="textPassword"
+        android:textColor="#00838F"
+        android:textColorHighlight="#00838F"
+        android:textColorHint="#00838F"
+        android:textColorLink="#00838F" />
+
+    <Button
+        android:id="@+id/registroususario"
+        android:layout_width="371dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/botonredondo"
+        android:gravity="center"
+        android:onClick="Entradas"
+        android:text="@string/botonentradas"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="24sp" />
+
+
+</LinearLayout>
